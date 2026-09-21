@@ -1,0 +1,26 @@
+{
+  "name": "taskflow",
+  "version": "1.0.0",
+  "description": "TaskFlow — Team Task Management Platform (MERN Stack)",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "seed": "npm run seed --prefix server",
+    "test": "npm test --prefix server"
+  },
+  "keywords": [
+    "mern",
+    "task-management",
+    "react",
+    "express",
+    "mongodb",
+    "node"
+  ],
+  "author": "TaskFlow Team",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
